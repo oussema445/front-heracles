@@ -8,6 +8,7 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { LoginModalComponent } from './components/login-modal/login-modal.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HomeComponent } from './pages/home/home.component';
     AvatarComponent,
     ProductListComponent,
     LoginModalComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

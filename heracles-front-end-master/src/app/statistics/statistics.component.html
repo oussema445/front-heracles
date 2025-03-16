@@ -1,0 +1,32 @@
+<div class="statistics-container">
+    <div class="breadcrumb">
+        <span (click)="goToDashboard()" class="back-link">
+          ← Dashboard
+        </span>  
+        <span> /Les_Statistisques</span>
+      </div>
+    <h1>Les Statistisques</h1>
+    <div class="stats">
+      <div class="stat-card users">
+        <h3>Utilisateurs</h3>
+        <p>{{ totalUsers }}</p>
+      </div>
+      <div class="stat-card orders">
+        <h3>Commandes</h3>
+        <p>{{ totalOrders }}</p>
+      </div>
+      <div class="stat-card revenue">
+        <h3>Revenu</h3>
+        <p>{{ totalRevenue | currency:'EUR' }}</p>
+      </div>
+    </div>
+
+<div></div>
+<div></div>
+
+    <div class="image-container">
+        <img src="assets/combo6.png" alt="Statistiques" />
+      </div>
+      
+  </div>
+  

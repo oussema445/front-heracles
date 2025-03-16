@@ -1,0 +1,79 @@
+.users-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    /* Corrige l'espace blanc */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligner le contenu en haut */
+    min-height: 80vh; /* Ajuste la hauteur */
+  }
+  
+  h1 {
+    margin-bottom: 15px;
+    font-size: 2rem; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    color: transparent; /* Couleur de texte transparente */
+    background: linear-gradient(90deg, #007bff, #4aa5d2); /* Dégradé de couleur */
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    background-clip: text;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black; /* Texte en noir */
+    background: white;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: black; /* Texte en noir */
+  }
+  
+  th {
+    background: #007bff;
+    color: white;
+  }
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .back-link {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  

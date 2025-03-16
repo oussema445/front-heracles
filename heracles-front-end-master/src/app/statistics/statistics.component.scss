@@ -1,0 +1,87 @@
+.statistics-container {
+   
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        gap: 15px;
+
+      
+        /* Corrige l'espace blanc */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Aligner le contenu en haut */
+        min-height: 80vh; /* Ajuste la hauteur */
+      
+  }
+  
+  .image-container img {
+    width: 650px; /* Ajuste la taille de l'image */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .stat-card {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .users {
+    background-color: #007bff;
+  }
+  
+  .orders {
+    background-color: #28a745;
+  }
+  
+  .revenue {
+    background-color: #ffc107;
+  }
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .back-link {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  h1 {
+    margin-bottom: 15px;
+    font-size: 2rem; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    color: transparent; /* Couleur de texte transparente */
+    background: linear-gradient(90deg, #007bff, #4aa5d2); /* Dégradé de couleur */
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    background-clip: text;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  }

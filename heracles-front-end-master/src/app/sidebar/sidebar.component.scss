@@ -1,0 +1,67 @@
+.sidebar {
+    width: 250px; // Largeur de la sidebar ouverte
+    background-color: #2c3e50;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    transition: width 0.3s ease; // Animation fluide
+  
+    &.sidebar-collapsed {
+      width: 80px; // Largeur de la sidebar réduite
+  
+      .logo, .nav-links span {
+        display: none; // Masque le logo et le texte des liens
+      }
+  
+      .nav-links {
+        a {
+          justify-content: center; // Centre les icônes
+        }
+      }
+    }
+  
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  
+      button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+  
+        &:hover {
+          color: #1abc9c;
+        }
+      }
+    }
+  
+    .nav-links {
+      list-style-type: none;
+      padding: 0;
+  
+      li {
+        margin: 15px 0;
+      }
+  
+      a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+  
+        fa-icon {
+          margin-right: 10px;
+        }
+  
+        &:hover {
+          color: #1abc9c;
+        }
+      }
+    }
+  }

@@ -1,0 +1,53 @@
+.dashboard-container {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  .sections-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .section-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .section-card:hover {
+    transform: scale(1.05);
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    margin-top: 10px;
+    color: #333;
+  }
+  h1 {
+    margin-bottom: 15px;
+    font-size: 2rem; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    color: transparent; /* Couleur de texte transparente */
+    background: linear-gradient(90deg, #007bff, #4aa5d2);
+        -webkit-background-clip: text; /* Applique le dégradé au texte */
+    background-clip: text;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  }
+
+  

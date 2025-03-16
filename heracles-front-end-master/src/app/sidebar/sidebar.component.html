@@ -1,0 +1,19 @@
+<div class="sidebar" [ngClass]="{ 'sidebar-collapsed': isCollapsed }">
+    <!-- Logo et bouton de bascule -->
+    <div class="sidebar-header">
+      <div class="logo" *ngIf="!isCollapsed">Mon Application</div>
+      <button (click)="toggleSidebar()">
+        <fa-icon [icon]="['fas', 'bars']"></fa-icon>
+      </button>
+    </div>
+  
+    <!-- Liens de navigation -->
+    <ul class="nav-links">
+      <li><a routerLink="/commandes"><fa-icon [icon]="['fas', 'list']"></fa-icon><span *ngIf="!isCollapsed">Liste des Commandes</span></a></li>
+      <li><a routerLink="/utilisateurs"><fa-icon [icon]="['fas', 'users']"></fa-icon><span *ngIf="!isCollapsed">Liste des Utilisateurs</span></a></li>
+      <li><a routerLink="/statistiques"><fa-icon [icon]="['fas', 'chart-bar']"></fa-icon><span *ngIf="!isCollapsed">Statistiques</span></a></li>
+      <li><a routerLink="/apropos"><fa-icon [icon]="['fas', 'info-circle']"></fa-icon><span *ngIf="!isCollapsed">À propos de nous</span></a></li>
+      <li><a routerLink="/profil"><fa-icon [icon]="['fas', 'user']"></fa-icon><span *ngIf="!isCollapsed">Profil</span></a></li>
+      <li><a (click)="logout()"><fa-icon [icon]="['fas', 'sign-out-alt']"></fa-icon><span *ngIf="!isCollapsed">Déconnexion</span></a></li>
+    </ul>
+  </div>

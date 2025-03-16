@@ -1,0 +1,41 @@
+
+  
+<div class="users-container">
+
+    <div class="breadcrumb">
+        <span (click)="goToDashboard()" class="back-link">
+          ← Dashboard
+        </span>  
+        <span> / Liste des utilisateurs</span>
+      </div>
+    <h1>Liste des Utilisateurs</h1>
+  
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher un utilisateur..." />
+  
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Rôle</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of filteredUsers">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.role }}</td>
+          <td>
+            <button class="view-btn" (click)="viewUser(user)">📋 Consulter</button>
+            <button class="archive-btn" (click)="archiveUser(user.id)">📁 Archiver</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <p *ngIf="filteredUsers.length === 0">Aucun utilisateur trouvé.</p>
+  </div>
+  

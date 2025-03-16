@@ -8,6 +8,7 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { LoginModalComponent } from './components/login-modal/login-modal.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeComponent } from './pages/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),

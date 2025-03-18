@@ -1,0 +1,82 @@
+.about-us-container {
+    background-color: #111827; // Couleur de fond principale
+    color: #f3f4f6; // Couleur de texte claire pour un bon contraste
+    padding: 2rem;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  
+    h1, h2 {
+      color: #ffffff; // Titres en blanc pour plus de visibilité
+      margin-bottom: 1rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+      margin-top: 1.5rem;
+      border-bottom: 2px solid #3b82f6; // Ligne bleue sous les titres
+      padding-bottom: 0.5rem;
+    }
+  
+    p {
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #d1d5db; // Texte légèrement gris pour un meilleur contraste
+    }
+  
+    ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+      margin-bottom: 1.5rem;
+  
+      li {
+        margin-bottom: 0.75rem;
+        color: #d1d5db; // Texte des listes en gris clair
+      }
+    }
+  
+    .intro {
+      p {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    }
+  
+    .vision, .product, .values, .team, .why-us, .commitment, .call-to-action {
+      margin-bottom: 2rem;
+    }
+  
+    .values, .why-us {
+      ul {
+        padding-left: 1.5rem;
+      }
+    }
+  
+    .call-to-action {
+      text-align: center;
+      margin-top: 2rem;
+  
+      p {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #ffffff; // Texte en blanc pour le call-to-action
+      }
+    }
+  
+    // Effet de survol pour les liens (si vous en ajoutez)
+    a {
+      color: #3b82f6; // Couleur bleue pour les liens
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }

@@ -1,25 +1,14 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .h-screen {
-    height: 100vh;
-  }
-  
-  .bg-gray-900 {
-    background-color: #1a202c; // Couleur de fond sombre
-  }
-  
-  .text-white {
-    color: white;
-  }
-  
-  .overflow-y-auto {
-    overflow-y: auto;
-  }
+.sidebar {
+  width: 16rem; /* Largeur fixe */
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+  background-color: #2c3e50;
+  color:  #2c3e50;
+  position: fixed; /* Fixer la sidebar */
+  top: 0;
+  left: 0;
+}
+
+.content {
+  margin-left: 16rem; /* Décale le contenu pour ne pas être caché par la sidebar */
+  flex: 1;
+}

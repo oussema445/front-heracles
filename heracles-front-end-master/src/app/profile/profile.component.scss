@@ -1,0 +1,56 @@
+.profile-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .profile-card h2 {
+    margin-bottom: 10px;
+    color: black;  /* Titre en noir */
+  }
+  
+  .profile-card p {
+    margin: 10px 0;
+    color: black;  /* Texte des données en noir */
+  }
+  
+  .profile-card strong {
+    color: black;  /* Texte des labels en noir */
+  }
+  
+  .edit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .edit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  h1 {
+    margin-bottom: 15px;
+    font-size: 2rem; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    color: transparent; /* Couleur de texte transparente */
+    background: linear-gradient(90deg, #168ddc, #10052b); /* Dégradé de couleur */
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    background-clip: text;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  }

@@ -24,16 +24,6 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: black;
-    background: white;
-  }
-  
   .sections-container {
     display: flex;
     flex-wrap: wrap;
@@ -74,10 +64,6 @@
     color: white;
   }
   
-  .actions {
-    margin-top: 10px;
-  }
-  
   button {
     padding: 6px 12px;
     margin: 5px;
@@ -95,12 +81,12 @@
     background-color: #0056b3;
   }
   
-  .archive-btn {
+  .cancel-btn {
     background-color: #f1f1f1;
     color: #333;
   }
   
-  .archive-btn:hover {
+  .cancel-btn:hover {
     background-color: #ccc;
   }
   

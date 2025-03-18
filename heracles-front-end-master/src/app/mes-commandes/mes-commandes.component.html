@@ -1,19 +1,16 @@
 <div class="orders-container">
     <div class="breadcrumb">
-        <span (click)="goToDashboard()" class="back-link">← Dashboard</span>
-        <span> / Liste des commandes</span>
+        <span (click)="goToAccueil()" class="back-link">← Accueil</span>
+        <span> / Mes Commandes</span>
     </div>
-    <h1>Liste des Commandes</h1>
-
-    <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher une commande..." />
+    <h1>Mes Commandes</h1>
 
     <div class="sections-container">
-        <div *ngFor="let order of filteredOrders" class="section-card">
+        <div *ngFor="let order of orders" class="section-card">
             <table>
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Client</th>
                         <th>Date</th>
                         <th>Total</th>
                         <th>Actions</th>
@@ -22,12 +19,11 @@
                 <tbody>
                     <tr>
                         <td>{{ order.id }}</td>
-                        <td>{{ order.client }}</td>
                         <td>{{ order.date }}</td>
                         <td>{{ order.total }} TND</td>
                         <td>
                             <button class="view-btn" (click)="viewOrder(order)">📋 Consulter</button>
-                            <button class="archive-btn" (click)="archiveOrder(order.id)">📁 Archiver</button>
+                            <button class="cancel-btn" (click)="cancelOrder(order.id)">❌ Annuler</button>
                         </td>
                     </tr>
                 </tbody>
@@ -35,5 +31,5 @@
         </div>
     </div>
 
-    <p *ngIf="filteredOrders.length === 0">Aucune commande trouvée.</p>
-</div>
+    <p *ngIf="orders.length === 0">Aucune commande trouvée.</p>
+</div> 

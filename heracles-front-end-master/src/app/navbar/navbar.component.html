@@ -7,7 +7,7 @@
     <!-- Conteneur pour l'icône du panier et le bouton de connexion -->
     <div class="absolute right-4 flex items-center gap-4">
         <!-- Icône du panier -->
-        <img src="assets/5993968.png" alt="Icône du panier" class="w-8 h-8 cursor-pointer hover:opacity-80 transition-opacity" />
+        <img src="assets/5993968.png" alt="Icône du panier" class="w-8 h-8 cursor-pointer hover:opacity-80 transition-opacity" (click)="toggleCart()" />
 
         <!-- Bouton de connexion -->
         <button (click)="openModal()" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition-colors">
@@ -41,7 +41,7 @@
 
         <!-- Bouton "Se connecter avec Google" -->
         <button class="bg-red-500 text-white p-2 w-full mt-2 flex items-center justify-center gap-2 hover:bg-red-600 transition-colors">
-            <img src="assets\google.png" alt="Logo Google" class="w-5 h-5">
+            <img src="assets/google.png" alt="Logo Google" class="w-5 h-5">
             Se connecter avec Google
         </button>
 
@@ -59,3 +59,55 @@
         </p>
     </div>
 </div>
+
+<!-- Arrière-plan cliquable pour fermer le panier -->
+<div *ngIf="isCartOpen" class="cart-backdrop" (click)="toggleCart()">
+  <!-- Contenu du panier (Empêche la fermeture si on clique dedans) -->
+  <div class="cart-modal" (click)="$event.stopPropagation()">
+    <div class="cart-content">
+      <h2 class="cart-title">Mon Panier</h2>
+
+      <!-- Tableau des articles -->
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Article</th>
+            <th>Prix Unitaire</th>
+            <th>Quantité</th>
+            <th>Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of cartItems">
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }} TND</td>
+            <td>
+              <input
+                type="number"
+                [(ngModel)]="item.quantity"
+                min="1"
+                class="quantity-input"
+                (change)="updateQuantity(item)"
+              />
+            </td>
+            <td>{{ item.price * item.quantity }} TND</td>
+            <td>
+              <button class="delete-button" (click)="removeItem(item)">Supprimer</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Total et boutons -->
+      <div class="cart-footer">
+        <span class="total-amount">Total: {{ totalAmount }} TND</span>
+        <div class="buttons-container">
+          <button class="checkout-button" (click)="goToCommande()">Passer la Commande</button>
+          <button class="close-button" (click)="toggleCart()">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

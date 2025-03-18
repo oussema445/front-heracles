@@ -1,0 +1,31 @@
+<div class="commande-card">
+  <h2>Informations de livraison</h2>
+
+  <!-- Adresse existante affichée -->
+  <p class="adresse-existante"><strong>Adresse actuelle :</strong> {{ existingAddress }}</p>
+
+  <form (submit)="submitOrder()" class="order-form">
+      <!-- Checkbox pour confirmer l'adresse existante -->
+      <div class="checkbox-container">
+          <input type="checkbox" id="confirmExisting" [(ngModel)]="confirmExistingAddress" name="confirmExistingAddress" (change)="toggleAddressOptions()">
+          <label for="confirmExisting">Confirmer cette adresse</label>
+      </div>
+
+      <!-- Checkbox pour entrer une nouvelle adresse -->
+      <div class="checkbox-container">
+          <input type="checkbox" id="enterNew" [(ngModel)]="enterNewAddress" name="enterNewAddress" (change)="toggleAddressOptions()">
+          <label for="enterNew">Utiliser une autre adresse</label>
+      </div>
+
+      <!-- Nouvelle adresse si la case est cochée -->
+      <div *ngIf="enterNewAddress">
+          <label for="newAddress"><strong> adresse :</strong></label>
+          <input type="text" id="newAddress" [(ngModel)]="newAddress" name="newAddress" class="input-field" placeholder="Entrez la nouvelle adresse" required />
+      </div>
+
+      <!-- Bouton pour aller au paiement -->
+      <button type="button" class="btn-commander" (click)="goToPayment()" [disabled]="!confirmExistingAddress && !newAddress">
+          Passer au paiement
+      </button>
+  </form>
+</div>

@@ -1,0 +1,77 @@
+.commande-card {
+  background: #fff; /* Fond blanc */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(90deg, #007bff, #4aa5d2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.adresse-existante {
+  font-size: 1rem;
+  background: #f9f9f9;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: black; /* Texte en noir */
+}
+
+.btn-commander {
+  background: #007bff;
+  color: white;
+  padding: 0.8rem;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-commander:hover {
+  background: #0056b3;
+}

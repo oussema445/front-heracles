@@ -1,4 +1,4 @@
-.orders-container {
+.order-details-container {
     max-width: 1000px;
     margin: auto;
     padding: 20px;
@@ -24,21 +24,19 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: black;
-    background: white;
+  h2 {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
   }
   
-  .sections-container {
+  .order-info {
+    margin-top: 20px;
+    text-align: left;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
   }
   
   .section-card {
@@ -50,6 +48,7 @@
     width: 100%;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    margin-bottom: 20px;
   }
   
   .section-card:hover {
@@ -74,36 +73,6 @@
     color: white;
   }
   
-  .actions {
-    margin-top: 10px;
-  }
-  
-  button {
-    padding: 6px 12px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .view-btn {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .view-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .archive-btn {
-    background-color: #f1f1f1;
-    color: #333;
-  }
-  
-  .archive-btn:hover {
-    background-color: #ccc;
-  }
-  
   .breadcrumb {
     display: flex;
     align-items: center;
@@ -126,4 +95,6 @@
     color: #0056b3;
     text-decoration: underline;
   }
-  
+  .order-info {
+    color: black;  /* Change la couleur du texte en noir */
+}

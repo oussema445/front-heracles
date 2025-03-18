@@ -20,6 +20,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faList, faUsers, faChartBar, faInfoCircle, faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { MesCommandesComponent } from './mes-commandes/mes-commandes.component';
+import { CommandeDetailComponent } from './commande-detail/commande-detail.component';
+import { AProposComponent } from './a-propos/a-propos.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CommanderComponent } from './commander/commander.component';
+import { PaiementComponent } from './paiement/paiement.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +41,14 @@ import { library } from '@fortawesome/fontawesome-svg-core';
     UsersComponent,
     OrdersComponent,
     StatisticsComponent,
-    SidebarComponent
+    SidebarComponent,
+    MesCommandesComponent,
+    CommandeDetailComponent,
+    AProposComponent,
+    ProfileComponent,
+    CommanderComponent,
+    PaiementComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,
